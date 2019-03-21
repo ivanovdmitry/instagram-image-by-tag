@@ -1,0 +1,26 @@
+#Mac files
+.DS_Store
+
+
+node_modules
+
+persistence
+
+.env
+
+.npm
+
+#
+build/Release
+
+#docker-compose files
+docker-compose.override.yml
+
+
+#Logs
+logs
+log
+*.log
+npm-debug.log*
+
+

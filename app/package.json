@@ -1,0 +1,19 @@
+{
+  "name": "instagram-images-by-tag",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon /app/index.js --ignore '/app/persistence/*' --exitcrash",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivanov Dmitry <ivanovdmitry@csgo.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "helmet": "^3.15.1",
+    "lodash": "^4.17.11",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}

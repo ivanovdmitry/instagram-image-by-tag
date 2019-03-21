@@ -1,0 +1,21 @@
+version: '3'
+
+networks:
+  express-back:
+    external:
+      name: redis_express-back
+
+services:
+  express-api:
+    build: ./app
+    networks:
+      - express-back
+    volumes:
+      - "./app:/app:rw"
+      - "/app/node_modules"
+    restart: unless-stopped
+    ports:
+      - ${HTTP_PORT}:3000
+    env_file:
+      - .env
+  
